@@ -12,58 +12,67 @@
 </head>
 
 <body>
-  <section class="contact pad-t-2 pad-b-2">
-    <div class="max-length">
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+  <section class="contact max-length pad-t-2 pad-b-2 gutter">
+    <div>
+      <h1 class="push">Want to go to Mars?</h1>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
         <fieldset>
-          <legend>Personal details</legend>
+          <legend class="italic pad-b-1-2 mega">Personal details</legend>
 
-          <div class="push">
-            <label for="name">Name</label>
-            <input id="name" required>
+          <div class="grid">
+            <div class="name unit xs-1 s-1 m-1 l-1-2">
+              <div class="push">
+                <label for="name">Name</label>
+                <input id="name" required>
+              </div>
+            </div>
+
+            <div class="age unit xs-1 s-1 m-1 l-1-2">
+              <div class="push">
+                <label for="age">Age</label>
+                <input id="age" required>
+              </div>
+            </div>
+
+            <div class="email unit xs-1 s-1 m-1 l-1-2">
+              <div class="push">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="fitness unit xs-1 s-1 m-1 l-1-2">
+              <div class="push">
+                <label for="fitness">Physical fitness</label>
+                <select id="fitness" name="fitness">
+                  <option>Super-human</option>
+                  <option>Fit as a fiddle</option>
+                  <option>Not terribly strong</option>
+                  <option>A little couch-potato-y</option>
+                </select>
+              </div>
+            </div>
           </div>
 
-          <div class="push">
-            <label for="age">Age</label>
-            <input id="age" required>
-          </div>
-
-          <div class="push">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
-          </div>
-
-          <div class="push">
-            <label for="fitness">Physical fitness</label>
-            <select id="fitness">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
-          </div>
-
-          <div class="push">
+          <div>
             <label for="address">Address</label>
-            <textarea id="address" required></textarea>
+            <textarea id="address" name="address" required></textarea>
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Mission statement</legend>
+        <fieldset class="push-0">
+          <legend class="push italic mega">Mission statement</legend>
 
           <div class="push">
             <label for="why">Why do you want to go to Mars?</label>
-            <textarea id="why" required></textarea>
+            <textarea id="why" name="Why" required></textarea>
           </div>
-          <div>
-            <button class="btn mega" type="submit">Register for the trip!</button>
+          <div class="text-center push-0">
+            <button class="btn kilo push-0" type="submit">Register for the trip!</button>
           </div>
           <input type="hidden" name="_subject" value="Request to join the mission">
-
         </fieldset>
       </form>
     </div>
